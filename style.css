@@ -1,0 +1,513 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffa302;
+  position: fixed;
+  z-index: 12;
+}
+nav h2 {
+  font-size: 25px;
+}
+nav h2:hover {
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icons i {
+  font-size: 25px;
+}
+.icons i:hover {
+  cursor: pointer;
+}
+#Bar {
+  display: none;
+}
+.UlData{
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 80px;
+  z-index: 99;
+  color: white;
+  background-color: black;
+}
+.UlData a{
+  font-size: 18px;
+  display: block;
+}
+/* ---------------------------------User Card  */
+/* .User-card {
+  width: 280px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 23px -5px black;
+  display: none;
+  position: absolute;
+  top: 18%;
+  right: 3%;
+  z-index: 12;
+}
+.User-card button {
+  width: 100px;
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #ffa302;
+}
+.User-dets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.User-dets input {
+  width: 90%;
+  height: 35px;
+  font-size: 18px;
+  padding: 0px 10px;
+} */
+/* ----------------------------Join Form */
+.User-card{
+  width: 220px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  z-index: 99;
+  background-color: white;
+  display: none;
+}
+.User-card input{
+  width: 80%;
+  height: 30px;
+}
+.User-card button{
+  font-size: 1.2vw;
+  padding: 3px 30px;
+  color: white;
+  background-color: #04b208;
+}
+.ShowHide{
+  display: flex;
+}
+/* ----------------------------------main */
+.main1 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: wheat; */
+  position: relative;
+}
+.main1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  /* background-color: red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main2 h1 {
+  font-size: 60px;
+  /* color: white; */
+}
+.main2 button {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 6px 30px;
+  color: white;
+  border: 2px solid #ffa302;
+  background-color: transparent;
+}
+.main2 button:hover {
+  background-color: #ffa302;
+}
+/* ----------------------------------------section1 */
+.section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section1 h2 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+.section1 span {
+  color: #ffa302;
+}
+.book-form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+.card {
+  width: 430px;
+  height: 450px;
+  border-radius: 10px;
+  /* background-color: turquoise; */
+}
+.book-card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.book-card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  box-shadow: 2px 3px 23px -5px black;
+}
+.book-card2 button {
+  width: 100px;
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #ffa302;
+}
+.book-dets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.book-dets input {
+  width: 95%;
+  height: 35px;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+/* ----------------------------------------section2 */
+.section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section2 h2 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+.section2 span {
+  color: #ffa302;
+}
+.packages {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+.packages-box {
+  width: 350px;
+  height: 380px;
+  border-radius: 8px;
+  /* background-color: aqua; */
+  box-shadow: 2px 3px 23px -5px black;
+}
+.packages-box img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.packages-box h3 {
+  font-size: 20px;
+  padding: 5px 20px;
+}
+.packages-box p {
+  font-size: 20px;
+  line-height: 5px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+/* ----------------------------------------section3 */
+.section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section3 h2 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+.section3 span {
+  color: #ffa302;
+}
+.Best-place {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+.places-box {
+  width: 350px;
+  height: 380px;
+  border-radius: 8px;
+  /* background-color: aqua; */
+  box-shadow: 2px 3px 23px -5px black;
+}
+.places-box img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.places-box h3 {
+  font-size: 20px;
+  padding: 5px 20px;
+}
+.places-box p {
+  font-size: 20px;
+  line-height: 5px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+/* ----------------------------------------section 4 */
+.section4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section4 h2 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+.section4 span {
+  color: #ffa302;
+}
+.contact-form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+.card {
+  width: 430px;
+  height: 450px;
+  border-radius: 10px;
+  /* background-color: turquoise; */
+}
+.contact-card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contact-card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  box-shadow: 2px 3px 23px -5px black;
+}
+.contact-card2 button {
+  width: 100px;
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #ffa302;
+}
+.contact-dets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.contact-dets input {
+  width: 95%;
+  height: 35px;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+/* -------------------------------footer */
+footer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  color: white;
+  background-color: black;
+}
+.footer {
+  width: 30%;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-list h3 {
+  font-size: 20px;
+}
+
+/* ----------------------------- Responsive  */
+
+@media only screen and (max-width: 900px){
+  ul li a {
+    display: none;
+  }
+  #Bar {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 800px){
+
+  /* ----------------------------------main */
+.main1 img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  /* background-color: red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main2 h1 {
+  font-size: 8vw;
+  text-align: center;
+  /* color: white; */
+}
+.main2 button {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 6px 30px;
+  color: white;
+  border: 2px solid #ffa302;
+  background-color: transparent;
+}
+.main2 button:hover {
+  background-color: #ffa302;
+}
+  /* -------------------------------footer */
+  footer {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    color: white;
+    background-color: black;
+  }
+  .footer {
+    width: 30%;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-list h3 {
+    font-size: 3.1vw;
+  }
+  .footer-list p {
+    font-size: 2.2vw;
+  }
+}
